@@ -79,9 +79,22 @@ const isActive = activeSection === link.hash;
                   >
                     {link.name}
                   </Link>
-                  {isActive && (
+                  {/* {isActive && (
                     <span className="absolute -bottom-2.5 left-0 w-full h-[3px] bg-[#E00606] rounded-full" />
-                  )}
+                  )} */}
+             {isActive && (
+          <div className="absolute -bottom-[29px] left-1/2 -translate-x-1/2 flex justify-center pointer-events-none z-20 w-auto">
+            <Image
+              src="/images/line2.webp"
+              alt="Active tab indicator"
+              width={140}
+              height={55}
+              priority
+              unoptimized
+              className="!w-[80px] sm:!w-[55px] !max-w-none h-auto object-contain object-bottom mix-blend-multiply"
+            />
+          </div>
+        )}
                 </div>
               );
             })}

@@ -177,17 +177,17 @@ export default function ServicesGrid() {
 
                 {/* Card Body */}
                 <div className="p-6 pt-8 space-y-4">
-                  <h3 className="text-xl font-bold text-[#0a1b38] leading-tight">
+                  <h3 className="text-xl font-bold text-[#1A2A5D] leading-tight">
                     {item.title}
                   </h3>
-                  <p className="text-xs text-gray-500 leading-relaxed min-h-[48px]">
+                  <p className="text-xs text-[#52778D] text-gray-500 leading-relaxed min-h-[48px]">
                     {item.description}
                   </p>
 
                   {/* Bullet points */}
                   <ul className="space-y-2 pt-2 border-t border-gray-100">
                     {item.points.map((point, index) => (
-                      <li key={index} className="flex items-center text-xs font-semibold text-[#0a1b38] space-x-2">
+                      <li key={index} className="flex items-center text-xs font-semibold text-[#52778D] space-x-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-gray-800"></span>
                         <span>{point}</span>
                       </li>
@@ -200,7 +200,7 @@ export default function ServicesGrid() {
               <div className="p-6 pt-0">
                 <Link
                   href={`/services#${item.id}`}
-                  className="inline-flex items-center text-xs font-bold text-[#cca34a] hover:text-[#b38d38] transition-colors space-x-1"
+                  className="inline-flex items-center text-xs font-bold text-[#AF7820] hover:text-[#b38d38] transition-colors space-x-1"
                 >
                   <span>{item.linkText}</span>
                   <svg className="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
